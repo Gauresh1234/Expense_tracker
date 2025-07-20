@@ -1,7 +1,7 @@
 /* /* ---------- Global Styles ---------- */
 * {
   margin: 0;
-  padding: 0;
+
   box-sizing: border-box;
 }
 
@@ -12,7 +12,6 @@ body {
   line-height: 1.5;
 }
 
-
 .header {
   padding: 20px;
   border-bottom: 1px solid #e3e3e3;
@@ -22,28 +21,33 @@ body {
   position: relative;
   left: 40px;
 }
-.Name h1{
-    font-size: xx-large;
-    position: relative;
-    left: 60px;
-    top: 10px;
-
-
+.Name h1 {
+  font-size: xx-large;
+  position: relative;
+  left: 60px;
+  top: 20px;
 }
 .budget-summary {
   display: flex;
   justify-content: space-between;
   margin: 20px 40px;
   padding: 20px;
-  border: 2px dashed #3375f6;
+  /* border: 2px dashed #3375f6; */
   border-radius: 10px;
   background-color: #f8f9ff;
   position: relative;
   top: 10px;
+  display: flex;
+  gap: 20px;
 }
 
 .summary-card {
   flex: 1;
+  text-align: center;
+  border-radius: 16px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  height: 100px;
   text-align: center;
   
 }
@@ -51,7 +55,7 @@ body {
 .summary-card h4 {
   font-size: 16px;
   margin-bottom: 8px;
-  
+  margin-top: 10px;
 }
 
 .summary-card p {
@@ -118,7 +122,7 @@ body {
   background: #fff;
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   position: relative;
   top: 10px;
 }
@@ -158,10 +162,18 @@ body {
   margin-right: 4px;
 }
 
-.dot.travel { background-color: #3375f6; }
-.dot.groceries { background-color: #f87171; }
-.dot.food { background-color: orange; }
-.dot.health { background-color: #34d399; }
+.dot.travel {
+  background-color: #3375f6;
+}
+.dot.groceries {
+  background-color: #f87171;
+}
+.dot.food {
+  background-color: orange;
+}
+.dot.health {
+  background-color: #34d399;
+}
 
 .bar-graph {
   display: flex;
@@ -181,13 +193,12 @@ body {
   padding-top: 4px;
 }
 
-
 .expense-table {
   margin: 30px 40px;
   background: #fff;
   border-radius: 12px;
   overflow-x: auto;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .expense-table table {
@@ -195,7 +206,8 @@ body {
   border-collapse: collapse;
 }
 
-.expense-table th, .expense-table td {
+.expense-table th,
+.expense-table td {
   padding: 12px 16px;
   text-align: left;
   border-bottom: 1px solid #eee;
@@ -226,7 +238,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -239,7 +251,7 @@ body {
   border-radius: 12px;
   width: 300px;
   position: relative;
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   text-align: left;
 }
 
@@ -313,4 +325,3 @@ body {
   border-radius: 6px;
   cursor: pointer;
 }
-

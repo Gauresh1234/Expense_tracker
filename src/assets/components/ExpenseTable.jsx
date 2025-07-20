@@ -1,4 +1,3 @@
-
 import React from "react";
 
 const ExpenseTable = ({ expenses, onEdit, onDelete }) => {
@@ -20,8 +19,12 @@ const ExpenseTable = ({ expenses, onEdit, onDelete }) => {
               <td>{item.name}</td>
               <td>{item.amount.toFixed(2)}</td>
               <td>
-                <button className="edit-btn" onClick={() => onEdit(item)}>✏️ Edit</button>
-                <button className="delete-btn" onClick={() => onDelete(item)}>🗑️ Delete</button>
+                <button className="edit-btn" onClick={() => onEdit(item)}>
+                  ✏️ Edit
+                </button>
+                <button className="delete-btn" onClick={() => onDelete(item)}>
+                  🗑️ Delete
+                </button>
               </td>
             </tr>
           ))}
