@@ -1,4 +1,4 @@
-// src/components/Modals/AddBudgetModal.jsx
+
 import React, { useState } from "react";
 
 const AddBudgetModal = ({ onClose, onSave }) => {
