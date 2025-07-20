@@ -22,7 +22,7 @@ const App = () => {
   const [editingExpense, setEditingExpense] = useState(null);
   const [deletingExpense, setDeletingExpense] = useState(null);
 
-  const totalExpense = expenses.reduce((sum, exp) => sum + exp.amount, 0);
+  const totalExpense = expenses.reduce((sum, exp) => sum + exp.amount,0);
   const remaining = budget - totalExpense;
 
   return (
