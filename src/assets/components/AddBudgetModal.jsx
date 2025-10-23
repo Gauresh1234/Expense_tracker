@@ -12,6 +12,7 @@ const AddBudgetModal = ({ onClose, onSave }) => {
   };
 
   return (
+    
     <div className="modal-overlay">
       <div className="modal">
         <button className="close" onClick={onClose}>×</button>
